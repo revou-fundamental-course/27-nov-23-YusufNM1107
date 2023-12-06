@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaGa! (kalkulator Segitiga)</title>
+    <link rel="stylesheet" href="CSS\Style.css">
+    <script src="JS\Script.js"></script>
+</head>
+
+<body>
+    <div class="fcontainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">KaGa !</div>
+                <div class="lastname">Kalkulator Segitiga</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="#luas-segitiga" class="active" onclick="">Luas Segitiga</a></li>
+                <li><a href="#keliling-segitiga">Keliling Segitiga</a></li>
+            </ul>
+        </nav>
+    </div>
+        
+    <div class="bagian-luas-segitiga">
+        <div class="luas_segitiga">
+            <img src="Aset Gambar\luas_segitiga.jpg" alt="">
+        </div>
+        <div class="keterangan-segitiga-luas">
+            <h3>Keterangan :</h3>
+            <p>a = Alas segitiga</p>
+            <p>t = Tinggi Segitiga</p>
+            <p>Rumus Luas Segitiga = 1/2 x a x t</p>
+        </div>
+        <section class="input-luas-section" id="luas-segitiga">
+            <p>Hitung Luas Segitiga</p>
+            <label for="input-tinggi" id="label-tinggi">Tinggi</label>
+            <input type="number" id="input-tinggi" class="kaga-input">
+            <label for="input-alas" id="label-alas">Alas</label>
+            <input type="number" id="input-alas" class="kaga-input">
+            <div class="buttons">
+                <button onclick="luasSegitiga()">Hitung</button>
+                <button onclick="">Reset </button>
+            </div>
+            <p id="hasilLuas"></p>
+        </section>
+    </div>
+
+    <div class="bagian-keliling-segitiga">
+        <div class="keliling_segitiga">
+            <img src="Aset Gambar\keliling_segitiga.jpg" alt="">
+        </div>
+        <div class="keterangan-segitiga-keliling">
+            <h3>Keterangan :</h3>
+            <p>s = Sisi Segitiga</p>
+            <p>Rumus Keliling Segitiga = sisi + sisi + sisi</p>
+        </div>
+        <section class="input-keliling-section" id="keliling-segitiga">
+            <p>Hitung Keliling Segitiga</p>
+            <label for="input-sisi1" id="label-sisi">Sisi 1</label>
+            <input type="number" id="input-sisi1" class="kaga-input">
+            <label for="input-sisi2" id="label-sisi">Sisi 2</label>
+            <input type="number" id="input-sisi2" class="kaga-input">
+            <label for="input-sisi3" id="label-sisi">Sisi 3</label>
+            <input type="number" id="input-sisi3" class="kaga-input">
+            <div class="buttons">
+                <button onclick="kelilingsegitiga()">Hitung</button>
+                <button>Reset </button>
+            </div>
+            <p id="hasilKeliling"></p>
+        </section>
+    </div>
+</body>
+</html>
+
