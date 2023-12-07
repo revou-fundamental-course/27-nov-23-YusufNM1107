@@ -7,7 +7,11 @@ function luasSegitiga() {
     document.getElementById("hasilLuas").innerHTML = keteranganLuas + hasilLuas ;
     }
 
-
+function resetLuas() {
+    document.getElementById("input-tinggi").value = "";
+    document.getElementById("input-alas").value = "";
+    document.getElementById("hasilLuas").innerHTML = ""
+}
 
 function kelilingsegitiga() {
     let sisi1 = document.getElementById("input-sisi1").value;
@@ -20,3 +24,9 @@ function kelilingsegitiga() {
     
 }
 
+function resetKeliling() {
+    document.getElementById("input-sisi1").value = "";
+    document.getElementById("input-sisi2").value = "";
+    document.getElementById("input-sisi3").value = "";
+    document.getElementById("hasilKeliling").innerHTML = "";
+}
